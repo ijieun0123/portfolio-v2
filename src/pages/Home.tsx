@@ -4,20 +4,26 @@ const Home = () => {
             <section className="intro_section">
                 <div className="container">
                     <div className="text_box">
+                        <h2 className="sr_only">intro</h2>
                         <p className="paragraph">언제나 성장하는 퍼블리셔</p>
-                        <h2>
+                        <h3>
                             HELLO
                             <br /> I’M JIEUN
                             <br /> WEB PUBLISHER
-                        </h2>
+                        </h3>
                     </div>
-                    <div className="bg_photo"></div>
-                    <div className="bg_yellow_box"></div>
+                    <div className="bg_box">
+                        <div className="bg_photo"></div>
+                        <div className="bg_yellow_box"></div>
+                    </div>
                 </div>
             </section>
             <section className="about_section">
                 <div className="container">
-                    <div className="bg_photo"></div>
+                    <div className="circle_text_photo">
+                        <img src="" alt="publisher, designer, ISTP" />
+                        <div className="bg_photo"></div>
+                    </div>
                     <div className="text_box">
                         <h2 className="title">About me</h2>
                         <ul>
@@ -64,16 +70,18 @@ const Home = () => {
                     Defining <br />
                     Moments
                 </h2>
-                <p>
-                    CURIOUS
-                    <br />
-                    CREATIVE
-                    <br />
-                    EXPLORING
-                    <br />
-                    PASSIONATE
-                </p>
-                <div className="bg_photo_1"></div>
+                <div className="defining_photo_box">
+                    <div className="bg_photo_1"></div>
+                    <p>
+                        CURIOUS
+                        <br />
+                        CREATIVE
+                        <br />
+                        EXPLORING
+                        <br />
+                        PASSIONATE
+                    </p>
+                </div>
                 <div className="bg_photo_2"></div>
                 <div className="bg_photo_3"></div>
             </section>
@@ -89,16 +97,22 @@ const Home = () => {
                                 Philosophy
                             </h2>
                             <p className="paragraph">
-                                저는 견고한 시멘틱 마크업을 중요시하고,
+                                <strong>
+                                    저는 견고한 시멘틱 마크업을 중요시하고,
+                                </strong>
                                 <br className="hide_on_mobile" /> 웹 접근성과 웹
                                 표준을 신경써서 퍼블리싱을 합니다.
                                 <br className="hide_on_mobile" />
-                                팀원과 소통에 신경쓰며 사용자 니즈에 맞는
+                                <strong>팀원과 소통에 신경쓰며</strong> 사용자
+                                니즈에 맞는
                                 <br className="hide_on_mobile" />
                                 웹사이트를 구축하겠습니다.
                             </p>
                             <p className="paragraph">
-                                퍼블리셔로 일하면서 개발도 함께 공부해 왔습니다.
+                                <strong>
+                                    퍼블리셔로 일하면서 개발도 함께 공부해
+                                    왔습니다.
+                                </strong>
                                 <br className="hide_on_mobile" />
                                 디자이너와 개발자 사이에서 매끄러운 협업이
                                 가능하며, <br className="hide_on_mobile" />
@@ -114,9 +128,9 @@ const Home = () => {
                     <h2 className="title">History</h2>
                     <div className="history_boxes">
                         <div className="history_box history_box_1">
-                            <b className="history_title">
+                            <strong className="history_title">
                                 그린 컴퓨터 아카데미 수료
-                            </b>
+                            </strong>
                             <p className="history_year">2021.03 - 2021.07</p>
                             <p className="paragraph">
                                 포토샵, 일러스트, XD, html, css, Jquery 를
@@ -125,7 +139,9 @@ const Home = () => {
                             </p>
                         </div>
                         <div className="history_box history_box_2">
-                            <b className="history_title">라이언랩 근무</b>
+                            <strong className="history_title">
+                                라이언랩 근무
+                            </strong>
                             <p className="history_year">2021.08 - 2023.01</p>
                             <p className="paragraph">
                                 컨설팅 및 소프트웨어 개발 및 공급업,
@@ -135,7 +151,9 @@ const Home = () => {
                             </p>
                         </div>
                         <div className="history_box history_box_3">
-                            <b className="history_title">비플러스 근무</b>
+                            <strong className="history_title">
+                                비플러스 근무
+                            </strong>
                             <p className="history_year">2023.02 - 2023.09</p>
                             <p className="paragraph">
                                 소셜임팩트를 기업가치에 반영한 소셜벤처적용 P2P
@@ -144,7 +162,9 @@ const Home = () => {
                             </p>
                         </div>
                         <div className="history_box history_box_4">
-                            <b className="history_title">스파르타코딩클럽</b>
+                            <strong className="history_title">
+                                스파르타코딩클럽
+                            </strong>
                             <p className="history_year">2024.12 - 2025.05</p>
                             <p className="paragraph">
                                 실무 중심 커리큘럼으로 Java와 Spring Boot 기반
@@ -154,13 +174,7 @@ const Home = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="stick">
-                        <span className="line"></span>
-                        <span className="circle circle_1"></span>
-                        <span className="circle circle_2"></span>
-                        <span className="circle circle_3"></span>
-                        <span className="circle circle_4"></span>
-                    </div>
+                    <span className="stick"></span>
                 </div>
             </section>
             <section className="skill_section">
@@ -215,13 +229,25 @@ const Home = () => {
                                     </ul>
                                     <ul className="icons_box">
                                         <li>
-                                            <a href="#" target="_blank"></a>
+                                            <a
+                                                href="#"
+                                                target="_blank"
+                                                title="github"
+                                            ></a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank"></a>
+                                            <a
+                                                href="#"
+                                                target="_blank"
+                                                title="mini"
+                                            ></a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank"></a>
+                                            <a
+                                                href="#"
+                                                target="_blank"
+                                                title="figma"
+                                            ></a>
                                         </li>
                                     </ul>
                                 </div>

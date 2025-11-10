@@ -14,7 +14,7 @@ const Header = () => {
             <div className="container">
                 <h1 className="logo">
                     <a href="#">
-                        <img src="" alt="포트폴리오 로고" />
+                        <img src="" alt="이지은 포트폴리오 로고" />
                     </a>
                 </h1>
                 <button
@@ -29,9 +29,6 @@ const Header = () => {
                 <nav className={isNavActive ? "active" : ""}>
                     <h2 className="sr_only">메인 네비게이션</h2>
                     <ul>
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
                         <li>
                             <a href="#">About</a>
                         </li>
