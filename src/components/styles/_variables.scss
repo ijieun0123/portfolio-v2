@@ -1,0 +1,39 @@
+// 나눔스퀘어
+@import url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquare.woff");
+// Libre Baskerville
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+// color palette
+$black: #2b1d1e;
+$orange: #ffa127;
+$light_gray: #f5f5f5;
+$white: #fff;
+
+:root {
+    --black-color: #{$black};
+    --orange-color: #{$orange};
+    --light-gray-color: #{$light_gray};
+    --white-color: #{$white};
+}
+
+// font family
+$font_family_korean: "NanumSquare", sans-serif;
+$font_family_english: "Libre Baskerville", serif;
+
+// font size
+$font_size_mobile_section_title: 40px;
+$font_size_tablet_desktop_section_title: 80px;
+$font_size_mobile_paragraph: 16px;
+$font_size_tablet_desktop_paragraph: 18px;
+
+// font weight
+$font_wegiht_light: 300;
+$font_weight_regular: 400;
+$font_weight_medium: 500;
+$font_weight_semi_bold: 600;
+$font_weight_bold: 700;
+$font_weight_extra_bold: 800;
+
+// line height
+$line_height_mobile_paragraph: 1.375;
+$line_height_tablet_desktop_paragraph: 1.333;

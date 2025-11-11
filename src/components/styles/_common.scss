@@ -1,0 +1,64 @@
+// fonts
+.section_title {
+    font-family: $font_family_english;
+    font-size: $font_size_mobile_section_title;
+    color: $black;
+
+    @media (min-width: 768px) {
+        font-size: $font_size_tablet_desktop_section_title;
+    }
+}
+
+.paragraph {
+    font-family: $font_family_korean;
+    font-size: $font_size_mobile_paragraph;
+    line-height: $line_height_mobile_paragraph;
+    word-break: keep-all;
+    color: $black;
+
+    @media (min-width: 768px) {
+        font-size: $font_size_tablet_desktop_paragraph;
+        line-height: $line_height_tablet_desktop_paragraph;
+    }
+}
+
+// container
+.container {
+    width: 82.222%;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+        width: 86.979%;
+    }
+
+    @media (min-width: 1024px) {
+        width: 90.625%;
+    }
+
+    @media (min-width: 1440px) {
+        width: 1396px;
+    }
+}
+
+// section
+section {
+    margin: 150px 0;
+
+    @media (min-width: 1024px) {
+        margin: 200px 0;
+    }
+}
+
+// br
+
+// sr_only
+.sr_only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
