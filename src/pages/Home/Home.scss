@@ -1,0 +1,567 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+main {
+    .intro_section {
+        margin-bottom: 0;
+
+        .container {
+            .text_box {
+                margin-top: 175px;
+
+                .paragraph {
+                    color: $orange;
+                    font-weight: $font_weight_extra_bold;
+                }
+                h3 {
+                    margin: 18px 0 38px;
+                    font-family: $font_family_english;
+                    font-size: 40px;
+                    color: $black;
+                    font-weight: $font_weight_regular;
+                }
+            }
+            .bg_box {
+                .bg_photo {
+                    width: 100%;
+                    height: 334px;
+                    background: url("/portfolio-v2/img/intro_section_photo.png")
+                        no-repeat center/cover;
+                }
+                .bg_yellow_box {
+                }
+            }
+        }
+    }
+    .about_section {
+        margin: 0;
+        padding: 100px 0;
+        background: $light_gray;
+
+        .container {
+            .circle_text_photo {
+                @include flex_center;
+
+                .bg_circle_text {
+                    @include flex_center;
+                    width: 296px;
+                    height: 296px;
+                    background: url("/portfolio-v2/img/about_section_circle_text.png")
+                        no-repeat center/cover;
+
+                    .bg_photo {
+                        width: 230px;
+                        height: 230px;
+                        background: url("/portfolio-v2/img/about_section_photo.png")
+                            no-repeat center/cover;
+                    }
+                }
+            }
+            .text_box {
+                margin: 0 auto;
+                text-align: center;
+
+                .title {
+                    margin: 50px 0 30px;
+                }
+                ul {
+                    @include flex_center;
+                    @include flex_column;
+                    gap: 10px;
+
+                    li {
+                        display: flex;
+                        gap: 10px;
+
+                        b {
+                            font-weight: $font_weight_bold;
+                        }
+                        p {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .moments_section {
+        position: relative;
+        width: 100%;
+        height: 792px;
+        margin: 0;
+
+        .title {
+            position: absolute;
+            top: 338px;
+            left: 8.888%;
+            font-weight: $font_weight_bold;
+        }
+        .defining_photo_box {
+            position: absolute;
+            top: 76px;
+            left: 0;
+            width: 69.166%;
+
+            .bg_photo_1 {
+                width: 100%;
+                height: 212px;
+                background: url("/portfolio-v2/img/moments_section_photo_1.png")
+                    no-repeat center/cover;
+            }
+            b {
+                position: absolute;
+                top: 58px;
+                right: -80px;
+                font-size: 20px;
+                color: $black;
+                font-family: "Lato", sans-serif;
+            }
+        }
+        .bg_photo_2 {
+            position: absolute;
+            bottom: 100px;
+            right: 0;
+            width: 90.833%;
+            height: 239px;
+            background: url("/portfolio-v2/img/moments_section_photo_2.png")
+                no-repeat center/cover;
+        }
+        .bg_photo_3 {
+        }
+    }
+    .philosophy_section {
+        position: relative;
+        margin: 0;
+        padding-bottom: 100px;
+        background: $light_gray;
+
+        .container {
+            @include flex_center;
+
+            .bg_orange_box {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 248px;
+                background: $orange;
+            }
+            .about_me {
+                position: absolute;
+                top: 65px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                text-align: center;
+                font-size: 40px;
+                font-family: $font_family_english;
+                color: $white;
+                font-weight: $font_weight_regular;
+            }
+            .img_text_box {
+                @include flex_column;
+                gap: 50px;
+
+                .bg_photo {
+                    width: 296px;
+                    height: 296px;
+                    margin: 132px auto 0;
+                    background: url("/portfolio-v2/img/philosophy_section_photo.png")
+                        no-repeat center/cover;
+                    z-index: 2;
+                }
+                .text_box {
+                    text-align: center;
+
+                    .title {
+                        letter-spacing: -0.02px;
+                    }
+                    .paragraph_1 {
+                        margin: 30px 0;
+
+                        strong {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        .intro_section {
+            position: relative;
+
+            .container {
+                .text_box {
+                    margin-top: 138px;
+
+                    .paragraph {
+                    }
+                    h3 {
+                        margin: 18px 0 144px;
+                        font-size: 60px;
+                    }
+                }
+                .bg_box {
+                    .bg_photo {
+                        width: 74.251%;
+                        height: 460px;
+                    }
+                    .bg_yellow_box {
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        width: 62.5%;
+                        height: 528px;
+                        background: url("/portfolio-v2/img/intro_section_cloud_photo.png")
+                            no-repeat center/cover;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+        .about_section {
+            .container {
+                .circle_text_photo {
+                    .bg_circle_text {
+                        width: 650px;
+                        height: 650px;
+
+                        .bg_photo {
+                            width: 503px;
+                            height: 503px;
+                        }
+                    }
+                }
+                .text_box {
+                    .title {
+                        margin: 50px 0 30px;
+                    }
+                    ul {
+                        gap: 15px;
+
+                        li {
+                            b {
+                            }
+                            p {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .moments_section {
+            height: 1076px;
+
+            .title {
+                top: 457px;
+                left: 6.51%;
+            }
+            .defining_photo_box {
+                top: 76px;
+                left: 0;
+                width: 48.828%;
+
+                .bg_photo_1 {
+                    width: 100%;
+                    height: 281px;
+                }
+                b {
+                    top: 58px;
+                    right: -126px;
+                    font-size: 30px;
+                }
+            }
+            .bg_photo_2 {
+                bottom: 100px;
+                right: auto;
+                left: 6.51%;
+                width: 59.114%;
+                height: 319px;
+            }
+            .bg_photo_3 {
+                position: absolute;
+                top: 164px;
+                right: 0;
+                width: 40.104%;
+                height: 376px;
+                background: url("/portfolio-v2/img/moments_section_photo_3.png")
+                    no-repeat center/cover;
+                z-index: -1;
+            }
+        }
+        .philosophy_section {
+            padding-bottom: 150px;
+
+            .container {
+                .bg_orange_box {
+                    top: 0;
+                    left: 0;
+                    width: 17.708%;
+                    height: 100%;
+                }
+                .about_me {
+                    top: 97px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    font-size: 100px;
+                    color: #a5a5a5;
+                }
+                .img_text_box {
+                    gap: 80px;
+
+                    .bg_photo {
+                        width: 548px;
+                        height: 548px;
+                        margin: 224px auto 0;
+                    }
+                    .text_box {
+                        z-index: 2;
+
+                        .title {
+                            letter-spacing: 0;
+                        }
+                        .paragraph_1 {
+                            margin: 30px 0;
+
+                            strong {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        .intro_section {
+            .container {
+                .text_box {
+                    margin-top: 255px;
+
+                    .paragraph {
+                    }
+                    h3 {
+                        margin: 18px 0 84px;
+                        font-size: 80px;
+                    }
+                }
+                .bg_box {
+                    .bg_photo {
+                        width: 64.008%;
+                        height: 460px;
+                    }
+                    .bg_yellow_box {
+                        width: 63.085%;
+                        height: 528px;
+                    }
+                }
+            }
+        }
+        .moments_section {
+            height: 1076px;
+
+            .title {
+                top: 437px;
+                left: 27.979%;
+            }
+            .defining_photo_box {
+                top: 76px;
+                left: 0;
+                width: 41.015%;
+
+                .bg_photo_1 {
+                    width: 100%;
+                    height: 336px;
+                }
+                b {
+                    top: 79px;
+                    right: -138px;
+                }
+            }
+            .bg_photo_2 {
+                bottom: 100px;
+                left: 27.979%;
+                width: 44.335%;
+                height: 319px;
+            }
+            .bg_photo_3 {
+                top: 164px;
+                right: 0;
+                width: 33.105%;
+                height: 376px;
+            }
+        }
+        .philosophy_section {
+            padding-bottom: 100px;
+
+            .container {
+                .bg_orange_box {
+                    width: 25.878%;
+                }
+                .about_me {
+                    top: 468px;
+                    left: -36.231%;
+                    transform: translateX(0) rotate(-90deg);
+                    color: $white;
+                }
+                .img_text_box {
+                    gap: 80px;
+
+                    .bg_photo {
+                        width: 548px;
+                        height: 548px;
+                        margin: 224px auto 0;
+                    }
+                    .text_box {
+                        .title {
+                        }
+                        .paragraph_1 {
+                            margin: 30px 0;
+
+                            strong {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    main {
+        .intro_section {
+            max-width: 1920px;
+            height: 840px;
+            margin: 117px auto 0;
+
+            .container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .text_box {
+                    position: relative;
+                    margin-top: 0;
+
+                    .paragraph {
+                    }
+                    h3 {
+                        margin: 18px 0 84px;
+                        font-size: 80px;
+                    }
+                }
+                .bg_box {
+                    .bg_photo {
+                        width: 655px;
+                        height: 741px;
+                    }
+                    .bg_yellow_box {
+                        width: 751px;
+                        height: 840px;
+                    }
+                }
+            }
+        }
+        .about_section {
+            .container {
+                @include flex_between;
+
+                .circle_text_photo {
+                    .bg_circle_text {
+                        .bg_photo {
+                        }
+                    }
+                }
+                .text_box {
+                    .title {
+                        margin: 0 0 30px;
+                    }
+                    ul {
+                        li {
+                            b {
+                            }
+                            p {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .moments_section {
+            max-width: 1920px;
+            height: 1010px;
+            margin: 0 auto;
+
+            .title {
+                top: 370px;
+                left: 38.229%;
+            }
+            .defining_photo_box {
+                width: 33.333%;
+
+                .bg_photo_1 {
+                    width: 100%;
+                    height: 515px;
+                }
+                b {
+                    right: -135px;
+                }
+            }
+            .bg_photo_2 {
+                bottom: 100px;
+                left: 38.229%;
+                width: 23.02%;
+                height: 319px;
+            }
+            .bg_photo_3 {
+                top: 155px;
+                right: 5.729%;
+                width: 25.364%;
+                height: 553px;
+            }
+        }
+        .philosophy_section {
+            max-width: 1920px;
+            margin: 0 auto;
+            padding-bottom: 138px;
+
+            .container {
+                .bg_orange_box {
+                    // width: 714px
+                    width: 37.187%;
+                }
+                .about_me {
+                    top: 50%;
+                    left: -36.231%;
+                    transform: translateY(-50%) rotate(-90deg);
+                }
+                .img_text_box {
+                    gap: 55px;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-top: 138px;
+                    margin-left: 12.759%;
+
+                    .bg_photo {
+                        margin: 0 auto;
+                    }
+                    .text_box {
+                        text-align: left;
+
+                        .title {
+                        }
+                        .paragraph_1 {
+                            strong {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

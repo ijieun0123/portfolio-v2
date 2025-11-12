@@ -1,8 +1,9 @@
 // fonts
-.section_title {
+.title {
     font-family: $font_family_english;
     font-size: $font_size_mobile_section_title;
     color: $black;
+    font-weight: $font_weight_regular;
 
     @media (min-width: 768px) {
         font-size: $font_size_tablet_desktop_section_title;
@@ -50,6 +51,13 @@ section {
 }
 
 // br
+.hide_on_mobile {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: inline;
+    }
+}
 
 // sr_only
 .sr_only {

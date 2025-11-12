@@ -1,3 +1,5 @@
+import "./Home.scss";
+
 const Home = () => {
     return (
         <main>
@@ -21,8 +23,9 @@ const Home = () => {
             <section className="about_section">
                 <div className="container">
                     <div className="circle_text_photo">
-                        <img src="" alt="publisher, designer, ISTP" />
-                        <div className="bg_photo"></div>
+                        <div className="bg_circle_text">
+                            <div className="bg_photo"></div>
+                        </div>
                     </div>
                     <div className="text_box">
                         <h2 className="title">About me</h2>
@@ -72,7 +75,7 @@ const Home = () => {
                 </h2>
                 <div className="defining_photo_box">
                     <div className="bg_photo_1"></div>
-                    <p>
+                    <b>
                         CURIOUS
                         <br />
                         CREATIVE
@@ -80,7 +83,7 @@ const Home = () => {
                         EXPLORING
                         <br />
                         PASSIONATE
-                    </p>
+                    </b>
                 </div>
                 <div className="bg_photo_2"></div>
                 <div className="bg_photo_3"></div>
@@ -88,7 +91,7 @@ const Home = () => {
             <section className="philosophy_section">
                 <div className="container">
                     <div className="bg_orange_box"></div>
-                    <p className="about_me">ABOUT ME</p>
+                    <h3 className="about_me">ABOUT ME</h3>
                     <div className="img_text_box">
                         <div className="bg_photo"></div>
                         <div className="text_box">
@@ -96,7 +99,7 @@ const Home = () => {
                                 My Publishing <br />
                                 Philosophy
                             </h2>
-                            <p className="paragraph">
+                            <p className="paragraph paragraph_1">
                                 <strong>
                                     저는 견고한 시멘틱 마크업을 중요시하고,
                                 </strong>

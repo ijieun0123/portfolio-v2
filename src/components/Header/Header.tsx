@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Header.scss";
 
 const Header = () => {
     const [isNavActive, setIsNavActive] = useState(false);
