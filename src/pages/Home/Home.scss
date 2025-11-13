@@ -185,6 +185,72 @@ main {
             }
         }
     }
+    .history_section {
+        .container {
+            .title {
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            .history_boxes {
+                @include flex_column;
+                gap: 16px;
+
+                // 공통
+                .history_box {
+                    width: 100%;
+                    padding: 40px 30px;
+                    border-top: 5px solid $orange;
+                    box-shadow: $card_shadow;
+
+                    .history_title {
+                        font-family: $font_family_korean;
+                        font-size: 18px;
+                        font-weight: $font_weight_extra_bold;
+                        color: $black;
+                    }
+                    .history_year {
+                        margin: 15px 0;
+                        font-family: $font_family_korean;
+                        font-size: 18px;
+                        font-weight: $font_weight_bold;
+                        color: $black;
+                    }
+                    .paragraph {
+                    }
+                }
+                .history_box_1 {
+                }
+                .history_box_2 {
+                }
+                .history_box_3 {
+                }
+                .history_box_4 {
+                }
+            }
+            .stick {
+            }
+        }
+    }
+    .skill_section {
+        .container {
+            .title {
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            .skill_slider {
+            }
+        }
+    }
+    .portfolio_section {
+        .container {
+            .title {
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            .portfolio_slider {
+            }
+        }
+    }
 }
 
 @media (min-width: 768px) {
@@ -332,6 +398,67 @@ main {
                 }
             }
         }
+        .history_section {
+            .container {
+                position: relative;
+
+                .title {
+                }
+                .history_boxes {
+                    gap: 20px;
+                    margin-left: 86px;
+
+                    // 공통
+                    .history_box {
+                        position: relative;
+                        height: 248px;
+                        padding: 40px;
+                        border-top: 0;
+
+                        .history_title {
+                            font-size: 20px;
+                        }
+                        .history_year {
+                            margin: 25px 0;
+                            font-size: 20px;
+                        }
+                        .paragraph {
+                        }
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: -85px;
+                            display: inline-block;
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50px;
+                            background: $orange;
+                            z-index: 2;
+                        }
+                    }
+                    .history_box {
+                    }
+                    .history_box_2 {
+                    }
+                    .history_box_3 {
+                    }
+                    .history_box_4 {
+                    }
+                }
+                .stick {
+                    position: absolute;
+                    top: 250px;
+                    left: 13px;
+                    display: inline-block;
+                    width: 5px;
+                    height: 806px;
+                    background: $black;
+                }
+            }
+        }
     }
 }
 
@@ -426,6 +553,48 @@ main {
                             }
                         }
                     }
+                }
+            }
+        }
+        .history_section {
+            .container {
+                .title {
+                }
+                .history_boxes {
+                    gap: 20px;
+                    margin-left: 158px;
+
+                    // 공통
+                    .history_box {
+                        width: 89.61%;
+                        height: 248px;
+                        padding: 40px;
+
+                        .history_title {
+                        }
+                        .history_year {
+                        }
+                        .paragraph {
+                        }
+
+                        &::before {
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: -79px;
+                        }
+                    }
+                    .history_box {
+                    }
+                    .history_box_2 {
+                    }
+                    .history_box_3 {
+                    }
+                    .history_box_4 {
+                    }
+                }
+                .stick {
+                    top: 250px;
+                    left: 92px;
                 }
             }
         }
@@ -560,6 +729,66 @@ main {
                             }
                         }
                     }
+                }
+            }
+        }
+        .history_section {
+            .container {
+                .title {
+                }
+                .history_boxes {
+                    display: block;
+                    margin-left: 0;
+
+                    // 공통
+                    .history_box {
+                        width: 570px;
+                        height: auto;
+                        padding: 40px;
+
+                        .history_title {
+                        }
+                        .history_year {
+                        }
+                        .paragraph {
+                        }
+
+                        &::before {
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: auto;
+                        }
+                    }
+                    .history_box_1 {
+                        margin-left: auto;
+
+                        &::before {
+                            left: -143px;
+                        }
+                    }
+                    .history_box_2 {
+                        &::before {
+                            right: -143px;
+                        }
+                    }
+                    .history_box_3 {
+                        margin-left: auto;
+
+                        &::before {
+                            left: -143px;
+                        }
+                    }
+                    .history_box_4 {
+                        &::before {
+                            right: -143px;
+                        }
+                    }
+                }
+                .stick {
+                    top: 240px;
+                    left: 50%;
+                    transform: translate(-50%);
+                    height: 756px;
                 }
             }
         }

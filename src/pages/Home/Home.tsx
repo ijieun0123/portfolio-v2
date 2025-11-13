@@ -1,3 +1,5 @@
+import PortfolioSlider from "../../components/Slider/PortfolioSlider";
+import SkillSlider from "../../components/Slider/SkillSlider";
 import "./Home.scss";
 
 const Home = () => {
@@ -183,80 +185,13 @@ const Home = () => {
             <section className="skill_section">
                 <div className="container">
                     <h2 className="title">Skill</h2>
-                    <div className="swiper_wrap">
-                        <div className="swiper">
-                            <div className="slide">
-                                <div className="bg_icon"></div>
-                                <b>Figma</b>
-                                <p className="paragraph">
-                                    컴포넌트를 활용하여
-                                    <br /> 워크프레임, 웹 디자인을
-                                    <br />
-                                    작성할 수 있습니다.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <SkillSlider />
                 </div>
             </section>
             <section className="portfolio_section">
                 <div className="container">
                     <h2 className="title">Portfolio</h2>
-                    <div className="swiper_wrap">
-                        <div className="swiper">
-                            <div className="slide">
-                                <div className="bg_photo"></div>
-                                <div className="text_box">
-                                    <b className="portfolio_title">
-                                        미니 쿠퍼 리뉴얼 ( 데모 )
-                                    </b>
-                                    <ul className="info_skill_contribution">
-                                        <li>
-                                            <b>소개</b>
-                                            <p>
-                                                반응형 디자인과 향상된 사용자
-                                                경험을 위한 리뉴얼 프로젝트
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <b>기술</b>
-                                            <p>
-                                                React, Typescript, AOS,
-                                                Styled-Components, SCSS, Swiper
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <b>작업 기여도</b>
-                                            <p>디자인 100%, 퍼블리싱 100%</p>
-                                        </li>
-                                    </ul>
-                                    <ul className="icons_box">
-                                        <li>
-                                            <a
-                                                href="#"
-                                                target="_blank"
-                                                title="github"
-                                            ></a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="#"
-                                                target="_blank"
-                                                title="mini"
-                                            ></a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="#"
-                                                target="_blank"
-                                                title="figma"
-                                            ></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <PortfolioSlider />
                 </div>
             </section>
             <section className="contact_section">

@@ -1,0 +1,18 @@
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0;
+}
+
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    margin: 0 10px !important;
+    background: #b0b0b0;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--orange-color);
+}
