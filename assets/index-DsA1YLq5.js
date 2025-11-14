@@ -54,6 +54,12 @@ Error generating stack: `+a.message+`
     background: url(${n=>n.imgUrl}) no-repeat
         top/cover;
     box-shadow: 0px 4px 12px 0px rgba(43, 29, 30, 0.2);
+    transition: 2s;
+
+    &:hover {
+        background: url(${n=>n.imgUrl})
+            no-repeat bottom/cover;
+    }
 
     @media (min-width: 768px) {
         width: 670px;
@@ -74,6 +80,10 @@ Error generating stack: `+a.message+`
     font-size: 20px;
     font-weight: 700;
     color: var(--black-color);
+
+    @media (min-width: 768px) {
+        padding-left: 10px;
+    }
 `,R1=it.div`
     display: flex;
     flex-direction: column;
@@ -100,10 +110,18 @@ Error generating stack: `+a.message+`
         p {
         }
     }
+
+    @media (min-width: 768px) {
+        padding-left: 10px;
+    }
 `,U1=it.div`
     display: flex;
     gap: 20px;
     margin-top: 30px;
+
+    @media (min-width: 768px) {
+        padding-left: 10px;
+    }
 `,B1=it.a`
     display: inline-block;
     width: 25px;
