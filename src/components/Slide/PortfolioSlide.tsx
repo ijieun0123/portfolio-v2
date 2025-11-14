@@ -16,7 +16,7 @@ const StyledSlide = styled.div``;
 
 const PortfolioPhoto = styled.div<{ imgUrl: string }>`
     width: 100%;
-    height: 200px;
+    aspect-ratio: 294 / 200;
     max-width: 670px;
     background: url(${(props: { imgUrl: string }) => props.imgUrl}) no-repeat
         top/cover;
