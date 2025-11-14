@@ -15,11 +15,26 @@ interface PortfolioSlideProps {
 const StyledSlide = styled.div``;
 
 const PortfolioPhoto = styled.div<{ imgUrl: string }>`
-    width: 296px;
+    width: 100%;
     height: 200px;
+    max-width: 670px;
     background: url(${(props: { imgUrl: string }) => props.imgUrl}) no-repeat
         top/cover;
     box-shadow: 0px 4px 12px 0px rgba(43, 29, 30, 0.2);
+
+    @media (min-width: 768px) {
+        width: 670px;
+        height: 400px;
+    }
+
+    @media (min-width: 1024px) {
+        width: 928px;
+        max-width: none;
+    }
+
+    @media (min-width: 1440px) {
+        width: 688px;
+    }
 `;
 
 const Title = styled.h3`
@@ -41,6 +56,7 @@ const InfoSkillContributionWrap = styled.div`
 
         b {
             position: relative;
+            white-space: nowrap;
 
             &: after {
                 content: "";
@@ -69,6 +85,11 @@ const FrontGithubIcon = styled.a`
     height: 25px;
     background: url("/portfolio-v2/img/portfolio_section_github_icon.png")
         no-repeat center/cover;
+
+    @media (min-width: 768px) {
+        width: 30px;
+        height: 30px;
+    }
 `;
 
 const BackGithubIcon = styled.a`
@@ -77,6 +98,11 @@ const BackGithubIcon = styled.a`
     height: 25px;
     background: url("/portfolio-v2/img/portfolio_section_github_icon.png")
         no-repeat center/cover;
+
+    @media (min-width: 768px) {
+        width: 30px;
+        height: 30px;
+    }
 `;
 
 const GoToIcon = styled.a`
@@ -85,6 +111,11 @@ const GoToIcon = styled.a`
     height: 25px;
     background: url("/portfolio-v2/img/portfolio_section_goto_icon.png")
         no-repeat center/cover;
+
+    @media (min-width: 768px) {
+        width: 30px;
+        height: 30px;
+    }
 `;
 
 const FigmaIcon = styled.a`
@@ -93,6 +124,11 @@ const FigmaIcon = styled.a`
     height: 25px;
     background: url("/portfolio-v2/img/portfolio_section_figma_icon.png")
         no-repeat center/cover;
+
+    @media (min-width: 768px) {
+        width: 30px;
+        height: 30px;
+    }
 `;
 
 const PortfolioSlide = ({

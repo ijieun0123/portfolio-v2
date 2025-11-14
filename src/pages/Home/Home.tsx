@@ -199,7 +199,9 @@ const Home = () => {
                     <h2 className="title">Contact me</h2>
                     <div className="bg_photo"></div>
                     <span className="line"></span>
-                    <a href="#">ijieun0123@gmail.com</a>
+                    <a className="email" href="mailto:ijieun0123@gmail.com">
+                        ijieun0123@gmail.com
+                    </a>
                 </div>
             </section>
         </main>
