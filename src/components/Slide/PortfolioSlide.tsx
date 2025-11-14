@@ -21,6 +21,12 @@ const PortfolioPhoto = styled.div<{ imgUrl: string }>`
     background: url(${(props: { imgUrl: string }) => props.imgUrl}) no-repeat
         top/cover;
     box-shadow: 0px 4px 12px 0px rgba(43, 29, 30, 0.2);
+    transition: 2s;
+
+    &:hover {
+        background: url(${(props: { imgUrl: string }) => props.imgUrl})
+            no-repeat bottom/cover;
+    }
 
     @media (min-width: 768px) {
         width: 670px;
@@ -43,6 +49,10 @@ const Title = styled.h3`
     font-size: 20px;
     font-weight: 700;
     color: var(--black-color);
+
+    @media (min-width: 768px) {
+        padding-left: 10px;
+    }
 `;
 
 const InfoSkillContributionWrap = styled.div`
@@ -71,12 +81,20 @@ const InfoSkillContributionWrap = styled.div`
         p {
         }
     }
+
+    @media (min-width: 768px) {
+        padding-left: 10px;
+    }
 `;
 
 const IconWrap = styled.div`
     display: flex;
     gap: 20px;
     margin-top: 30px;
+
+    @media (min-width: 768px) {
+        padding-left: 10px;
+    }
 `;
 
 const FrontGithubIcon = styled.a`
