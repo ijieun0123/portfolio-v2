@@ -290,7 +290,7 @@ main {
 
             .container {
                 .text_box {
-                    margin-top: 138px;
+                    margin-top: 255px;
 
                     .paragraph {
                     }
@@ -686,6 +686,7 @@ main {
                     h3 {
                         margin: 18px 0 84px;
                         font-size: 80px;
+                        white-space: nowrap;
                     }
                 }
                 .bg_box {
