@@ -24,13 +24,13 @@ const Header = () => {
                 <div className="github_blog_menu_wrap">
                     <a
                         className="github"
-                        href="#"
+                        href="https://github.com/ijieun0123"
                         target="_blank"
                         title="이지은 깃허브"
                     ></a>
                     <a
                         className="blog"
-                        href="#"
+                        href="https://velog.io/@cock321/posts"
                         target="_blank"
                         title="이지은 블로그"
                     ></a>

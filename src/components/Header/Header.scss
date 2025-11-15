@@ -67,7 +67,7 @@ header {
                 }
                 &.active {
                     span:nth-child(2) {
-                        transform: translateY(7px) rotate(45deg);
+                        transform: translateY(9px) rotate(45deg);
                     }
                     span:nth-child(3) {
                         opacity: 0;
@@ -167,7 +167,7 @@ header {
                 }
             }
             nav {
-                top: 120px;
+                top: 100px;
 
                 ul {
                     li {
