@@ -48,12 +48,22 @@ main {
                     height: 296px;
                     background: url("/portfolio-v2/img/about_section_circle_text.png")
                         no-repeat center/cover;
+                    transition: 0.8s ease-in-out;
 
                     .bg_photo {
                         width: 230px;
                         height: 230px;
                         background: url("/portfolio-v2/img/about_section_photo.png")
                             no-repeat center/cover;
+                        transition: 0.8s ease-in-out;
+                    }
+
+                    &:hover {
+                        transform: rotate(360deg);
+
+                        .bg_photo {
+                            transform: rotate(-360deg);
+                        }
                     }
                 }
             }
