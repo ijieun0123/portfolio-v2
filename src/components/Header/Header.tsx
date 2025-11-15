@@ -10,11 +10,15 @@ const Header = () => {
         setIsMenuActive(!isMenuActive);
     };
 
+    const handleLogoClick = () => {
+        setIsNavActive(false);
+    };
+
     return (
         <header>
             <div className="container">
                 <h1 className="logo">
-                    <a href="#">
+                    <a href="#intro" onClick={handleLogoClick}>
                         <img
                             src="/portfolio-v2/img/header_logo.png"
                             alt="이지은 포트폴리오 로고"
@@ -46,29 +50,32 @@ const Header = () => {
                         <span></span>
                     </button>
                 </div>
-                <nav className={isNavActive ? "active" : ""}>
+                <nav
+                    className={isNavActive ? "active" : ""}
+                    onClick={handleMenuClick}
+                >
                     <h2 className="sr_only">메인 네비게이션</h2>
                     <ul>
                         <li>
-                            <a href="#">About</a>
+                            <a href="#about">About</a>
                         </li>
                         <li>
-                            <a href="#">Moments</a>
+                            <a href="#moments">Moments</a>
                         </li>
                         <li>
-                            <a href="#">Philosophy</a>
+                            <a href="#philosophy">Philosophy</a>
                         </li>
                         <li>
-                            <a href="#">History</a>
+                            <a href="#history">History</a>
                         </li>
                         <li>
-                            <a href="#">Skill</a>
+                            <a href="#skill">Skill</a>
                         </li>
                         <li>
-                            <a href="#">Portfolio</a>
+                            <a href="#portfolio">Portfolio</a>
                         </li>
                         <li>
-                            <a href="#">Contact</a>
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
                 </nav>

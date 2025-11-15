@@ -5,7 +5,7 @@ import "./Home.scss";
 const Home = () => {
     return (
         <main>
-            <section className="intro_section">
+            <section id="intro" className="intro_section">
                 <div className="container">
                     <div className="text_box">
                         <h2 className="sr_only">intro</h2>
@@ -22,7 +22,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className="about_section">
+            <section id="about" className="about_section">
                 <div className="container">
                     <div className="circle_text_photo">
                         <div className="bg_circle_text">
@@ -70,7 +70,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className="moments_section">
+            <section id="moments" className="moments_section">
                 <h2 className="title">
                     Defining <br />
                     Moments
@@ -90,7 +90,7 @@ const Home = () => {
                 <div className="bg_photo_2"></div>
                 <div className="bg_photo_3"></div>
             </section>
-            <section className="philosophy_section">
+            <section id="philosophy" className="philosophy_section">
                 <div className="container">
                     <div className="bg_orange_box"></div>
                     <h3 className="about_me">ABOUT ME</h3>
@@ -128,7 +128,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className="history_section">
+            <section id="history" className="history_section">
                 <div className="container">
                     <h2 className="title">History</h2>
                     <div className="history_boxes">
@@ -182,19 +182,19 @@ const Home = () => {
                     <span className="stick"></span>
                 </div>
             </section>
-            <section className="skill_section">
+            <section id="skill" className="skill_section">
                 <div className="container">
                     <h2 className="title">Skill</h2>
                     <SkillSlider />
                 </div>
             </section>
-            <section className="portfolio_section">
+            <section id="portfolio" className="portfolio_section">
                 <div className="container">
                     <h2 className="title">Portfolio</h2>
                     <PortfolioSlider />
                 </div>
             </section>
-            <section className="contact_section">
+            <section id="contact" className="contact_section">
                 <div className="container">
                     <h2 className="title">Contact me</h2>
                     <div className="bg_photo"></div>
