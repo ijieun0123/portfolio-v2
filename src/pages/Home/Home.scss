@@ -11,7 +11,7 @@ main {
 
                 .paragraph {
                     color: $orange;
-                    font-weight: $font_weight_extra_bold;
+                    font-weight: $font_weight_bold;
                 }
                 h3 {
                     margin: 18px 0 38px;
@@ -67,7 +67,7 @@ main {
                 ul {
                     @include flex_center;
                     @include flex_column;
-                    gap: 10px;
+                    gap: 4px;
 
                     li {
                         display: flex;
@@ -93,7 +93,7 @@ main {
             position: absolute;
             top: 338px;
             left: 8.888%;
-            font-weight: $font_weight_bold;
+            font-weight: $font_weight_semi_bold;
         }
         .defining_photo_box {
             position: absolute;
@@ -336,7 +336,7 @@ main {
                         margin: 50px 0 30px;
                     }
                     ul {
-                        gap: 15px;
+                        gap: 12px;
 
                         li {
                             b {
@@ -575,6 +575,8 @@ main {
             padding-bottom: 100px;
 
             .container {
+                justify-content: baseline;
+
                 .bg_orange_box {
                     width: 25.878%;
                 }
@@ -586,6 +588,7 @@ main {
                 }
                 .img_text_box {
                     gap: 80px;
+                    margin-left: 28.879%;
 
                     .bg_photo {
                         width: 548px;
@@ -593,6 +596,8 @@ main {
                         margin: 224px auto 0;
                     }
                     .text_box {
+                        text-align: left;
+
                         .title {
                         }
                         .paragraph_1 {

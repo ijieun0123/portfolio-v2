@@ -33,6 +33,10 @@ const Title = styled.h3`
     font-weight: 600;
     font-size: 20px;
     color: var(--black-color);
+
+    @media (min-width: 1024px) {
+        font-size: 25px;
+    }
 `;
 
 const Description = styled.p``;
