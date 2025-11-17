@@ -12,11 +12,16 @@ const StyledSlide = styled.div`
     padding: 30px 30px 50px 30px;
     box-shadow: 0px 4px 12px 0px rgba(43, 29, 30, 0.2);
     border-top: 5px solid var(--orange-color);
+    transition: 0.2s;
+
+    &:hover {
+        box-shadow: 0px 2px 4px 0px rgba(43, 29, 30, 0.1);
+        transform: translateY(2px);
+    }
 
     @media (min-width: 768px) {
         width: 50%;
         max-width: 375px;
-        fle-shrink: 0;
     }
 `;
 
