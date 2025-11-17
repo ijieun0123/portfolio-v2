@@ -119,58 +119,42 @@ const IconWrap = styled.div`
     @media (min-width: 768px) {
         padding-left: 10px;
     }
+
+    a {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        transition: 0.2s;
+
+        &:hover {
+            transform: translateY(2px);
+        }
+
+        @media (min-width: 768px) {
+            width: 30px;
+            height: 30px;
+        }
+    }
 `;
 
 const FrontGithubIcon = styled.a`
-    display: inline-block;
-    width: 25px;
-    height: 25px;
     background: url("/portfolio-v2/img/portfolio_section_github_icon.png")
         no-repeat center/cover;
-
-    @media (min-width: 768px) {
-        width: 30px;
-        height: 30px;
-    }
 `;
 
 const BackGithubIcon = styled.a`
-    display: inline-block;
-    width: 25px;
-    height: 25px;
     background: url("/portfolio-v2/img/portfolio_section_github_icon.png")
         no-repeat center/cover;
-
-    @media (min-width: 768px) {
-        width: 30px;
-        height: 30px;
-    }
 `;
 
 const GoToIcon = styled.a`
-    display: inline-block;
-    width: 25px;
-    height: 25px;
     background: url("/portfolio-v2/img/portfolio_section_goto_icon.png")
         no-repeat center/cover;
-
-    @media (min-width: 768px) {
-        width: 30px;
-        height: 30px;
-    }
 `;
 
 const FigmaIcon = styled.a`
-    display: inline-block;
-    width: 25px;
-    height: 25px;
     background: url("/portfolio-v2/img/portfolio_section_figma_icon.png")
         no-repeat center/cover;
-
-    @media (min-width: 768px) {
-        width: 30px;
-        height: 30px;
-    }
 `;
 
 const PortfolioSlide = ({
