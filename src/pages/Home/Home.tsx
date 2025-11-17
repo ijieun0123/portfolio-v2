@@ -238,7 +238,7 @@ const Home = () => {
                         <div
                             className="history_box history_box_4"
                             data-aos="fade-down"
-                            data-aos-delay="600"
+                            data-aos-delay="900"
                         >
                             <strong className="history_title">
                                 스파르타코딩클럽
