@@ -19,6 +19,7 @@ main {
                     font-size: 40px;
                     color: $black;
                     font-weight: $font_weight_regular;
+                    line-height: 1.25;
                 }
             }
             .bg_box {
@@ -84,9 +85,9 @@ main {
                         gap: 10px;
 
                         b {
-                            font-weight: $font_weight_bold;
+                            font-weight: $font_weight_semi_bold;
                         }
-                        p {
+                        .paragraph {
                         }
                     }
                 }
@@ -215,14 +216,14 @@ main {
                     .history_title {
                         font-family: $font_family_korean;
                         font-size: 18px;
-                        font-weight: $font_weight_extra_bold;
+                        font-weight: $font_weight_bold;
                         color: $black;
                     }
                     .history_year {
                         margin: 15px 0;
                         font-family: $font_family_korean;
                         font-size: 18px;
-                        font-weight: $font_weight_bold;
+                        font-weight: $font_weight_semi_bold;
                         color: $black;
                     }
                     .paragraph {
@@ -308,6 +309,7 @@ main {
                     h3 {
                         margin: 18px 0 144px;
                         font-size: 60px;
+                        line-height: 1.15;
                     }
                 }
                 .bg_box {
@@ -351,7 +353,7 @@ main {
                         li {
                             b {
                             }
-                            p {
+                            .paragraph {
                             }
                         }
                     }
@@ -413,7 +415,7 @@ main {
                     left: 50%;
                     transform: translateX(-50%);
                     font-size: 100px;
-                    color: #a5a5a5;
+                    color: #9b9b9b;
                 }
                 .img_text_box {
                     gap: 80px;
@@ -533,6 +535,7 @@ main {
                     h3 {
                         margin: 18px 0 84px;
                         font-size: 80px;
+                        line-height: 1.1;
                     }
                 }
                 .bg_box {
@@ -735,7 +738,7 @@ main {
                         li {
                             b {
                             }
-                            p {
+                            .paragraph {
                             }
                         }
                     }

@@ -30,7 +30,7 @@ const Icon = styled.div<{ imgUrl: string }>`
 const Title = styled.h3`
     margin: 30px 0;
     font-family: "Lato", sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
     color: var(--black-color);
 

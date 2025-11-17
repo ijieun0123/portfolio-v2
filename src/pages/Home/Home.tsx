@@ -38,13 +38,18 @@ const Home = () => {
                             </li>
                             <li>
                                 <b className="paragraph">이메일</b>
-                                <p className="paragraph">
+                                <a
+                                    href="mailto:ijieun0123@gmail.com"
+                                    className="paragraph"
+                                >
                                     ijieun0123@gmail.com
-                                </p>
+                                </a>
                             </li>
                             <li>
                                 <b className="paragraph">전화번호</b>
-                                <p className="paragraph">01050154750</p>
+                                <a href="tel:01050154750" className="paragraph">
+                                    01050154750
+                                </a>
                             </li>
                             <li>
                                 <b className="paragraph">주소</b>

@@ -47,7 +47,7 @@ const Title = styled.h3`
     margin: 30px 0 20px;
     font-family: "NanumSquare", sans-serif;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--black-color);
 
     @media (min-width: 768px) {
@@ -67,6 +67,7 @@ const InfoSkillContributionWrap = styled.div`
         b {
             position: relative;
             white-space: nowrap;
+            font-weight: 600;
 
             &: after {
                 content: "";

@@ -30,13 +30,13 @@ const Header = () => {
                         className="github"
                         href="https://github.com/ijieun0123"
                         target="_blank"
-                        title="이지은 깃허브"
+                        title="이지은 깃허브 새창"
                     ></a>
                     <a
                         className="blog"
                         href="https://velog.io/@cock321/posts"
                         target="_blank"
-                        title="이지은 블로그"
+                        title="이지은 블로그 새창"
                     ></a>
                     <button
                         className={

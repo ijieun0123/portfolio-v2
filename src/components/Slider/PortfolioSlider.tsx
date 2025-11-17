@@ -105,7 +105,6 @@ const PortfolioSlider = () => {
                 1440: {
                     slidesPerView: 6,
                     spaceBetween: 20,
-                    pagination: false,
                     allowTouchMove: false,
                     enabled: false,
                 },

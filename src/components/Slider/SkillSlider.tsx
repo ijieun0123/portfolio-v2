@@ -95,7 +95,6 @@ const SkillSlider = () => {
                 768: {
                     slidesPerView: 4,
                     spaceBetween: 20,
-                    pagination: false,
                     allowTouchMove: false,
                     enabled: false,
                 },
