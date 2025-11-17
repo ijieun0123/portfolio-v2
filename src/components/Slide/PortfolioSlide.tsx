@@ -14,18 +14,15 @@ interface PortfolioSlideProps {
 
 const StyledSlide = styled.div``;
 
-const PortfolioPhoto = styled.div<{ imgUrl: string }>`
+const PortfolioPhotoWrapper = styled.div`
     width: 100%;
     aspect-ratio: 294 / 200;
     max-width: 670px;
-    background: url(${(props: { imgUrl: string }) => props.imgUrl}) no-repeat
-        top/cover;
     box-shadow: 0px 4px 12px 0px rgba(43, 29, 30, 0.2);
-    transition: 2s;
+    overflow: hidden;
 
     &:hover {
-        background: url(${(props: { imgUrl: string }) => props.imgUrl})
-            no-repeat bottom/cover;
+        box-shadow: 0px 8px 20px 0px rgba(43, 29, 30, 0.3);
     }
 
     @media (min-width: 768px) {
@@ -40,6 +37,18 @@ const PortfolioPhoto = styled.div<{ imgUrl: string }>`
 
     @media (min-width: 1440px) {
         width: 688px;
+    }
+`;
+
+const PortfolioPhoto = styled.div<{ imgUrl: string }>`
+    width: 100%;
+    height: 100%;
+    background: url(${(props: { imgUrl: string }) => props.imgUrl}) no-repeat
+        top/cover;
+    transition: 0.3s ease-in-out;
+
+    ${PortfolioPhotoWrapper}:hover & {
+        transform: rotate(5deg) scale(1.2);
     }
 `;
 
@@ -163,7 +172,9 @@ const PortfolioSlide = ({
 }: PortfolioSlideProps) => {
     return (
         <StyledSlide className="portfolio_slide">
-            <PortfolioPhoto imgUrl={imgUrl}></PortfolioPhoto>
+            <PortfolioPhotoWrapper>
+                <PortfolioPhoto imgUrl={imgUrl}></PortfolioPhoto>
+            </PortfolioPhotoWrapper>
             <Title>{title}</Title>
             <InfoSkillContributionWrap>
                 <div>
