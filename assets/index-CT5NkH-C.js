@@ -144,50 +144,34 @@ Error generating stack: `+a.message+`
     @media (min-width: 768px) {
         padding-left: 10px;
     }
+
+    a {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        transition: 0.2s;
+
+        &:hover {
+            transform: translateY(2px);
+        }
+
+        @media (min-width: 768px) {
+            width: 30px;
+            height: 30px;
+        }
+    }
 `,G1=ct.a`
-    display: inline-block;
-    width: 25px;
-    height: 25px;
     background: url("/portfolio-v2/img/portfolio_section_github_icon.png")
         no-repeat center/cover;
-
-    @media (min-width: 768px) {
-        width: 30px;
-        height: 30px;
-    }
 `,q1=ct.a`
-    display: inline-block;
-    width: 25px;
-    height: 25px;
     background: url("/portfolio-v2/img/portfolio_section_github_icon.png")
         no-repeat center/cover;
-
-    @media (min-width: 768px) {
-        width: 30px;
-        height: 30px;
-    }
 `,Y1=ct.a`
-    display: inline-block;
-    width: 25px;
-    height: 25px;
     background: url("/portfolio-v2/img/portfolio_section_goto_icon.png")
         no-repeat center/cover;
-
-    @media (min-width: 768px) {
-        width: 30px;
-        height: 30px;
-    }
 `,V1=ct.a`
-    display: inline-block;
-    width: 25px;
-    height: 25px;
     background: url("/portfolio-v2/img/portfolio_section_figma_icon.png")
         no-repeat center/cover;
-
-    @media (min-width: 768px) {
-        width: 30px;
-        height: 30px;
-    }
 `,X1=({imgUrl:n,title:u,info:r,skill:i,contribution:c,frontGithubUrl:f,backGithubUrl:h,goToUrl:y,figmaUrl:p})=>O.jsxs(R1,{className:"portfolio_slide",children:[O.jsx(_m,{children:O.jsx(U1,{imgUrl:n})}),O.jsx(H1,{children:u}),O.jsxs(B1,{children:[O.jsxs("div",{children:[O.jsx("b",{className:"paragraph",children:"소개"}),O.jsx("p",{className:"paragraph",children:r})]}),O.jsxs("div",{children:[O.jsx("b",{className:"paragraph",children:"기술"}),O.jsx("p",{className:"paragraph",children:i})]}),O.jsxs("div",{children:[O.jsx("b",{className:"paragraph",children:"작업 기여도"}),O.jsx("p",{className:"paragraph",children:c})]})]}),O.jsxs(L1,{children:[f&&O.jsx(G1,{href:f,target:"_blank",title:"프론트 작업 깃허브"}),h&&O.jsx(q1,{href:h,target:"_blank",title:"백엔드 작업 깃허브"}),y&&O.jsx(Y1,{href:y,target:"_blank",title:"바로가기"}),p&&O.jsx(V1,{href:p,target:"_blank",title:"피그마"})]})]}),Q1=[{id:1,imgUrl:"/portfolio-v2/img/portfolio_section_mini.png",title:"미니 쿠퍼 리뉴얼 ( 데모 )",info:"반응형 디자인과 향상된 사용자 경험을 위한 리뉴얼 프로젝트",skill:"React, Typescript, AOS, Styled-Components, SCSS, Swiper",contribution:"디자인 100%, 퍼블리싱 100%",frontGithubUrl:"https://github.com/ijieun0123/mini",goToUrl:"https://ijieun0123.github.io/mini/",figmaUrl:"https://www.figma.com/design/UeoKT7p4M6sEzFGowKtoRo/mini?node-id=0-1&p=f&t=Z0ngzI6hRd814lEq-0"},{id:2,imgUrl:"/portfolio-v2/img/portfolio_section_hermes.png",title:"에르메스 리뉴얼 ( 데모 )",info:"반응형 디자인과 향상된 사용자 경험을 위한 리뉴얼 프로젝트",skill:"React, Typescript, AOS, Styled-Components, SCSS, Swiper",contribution:"디자인 100%, 퍼블리싱 100%",frontGithubUrl:"https://github.com/ijieun0123/hermes",goToUrl:"https://ijieun0123.github.io/hermes/",figmaUrl:"https://www.figma.com/design/uHHWrrnEOR1GAacw2vRVf7/hermes?t=Z0ngzI6hRd814lEq-0"},{id:3,imgUrl:"/portfolio-v2/img/portfolio_section_nike.png",title:"나이키 리뉴얼 ( 데모 )",info:"반응형 디자인과 향상된 사용자 경험을 위한 리뉴얼 프로젝트",skill:"React, Typescript, AOS, Styled-Components, SCSS, Swiper",contribution:"디자인 100%, 퍼블리싱 100%",frontGithubUrl:"https://github.com/ijieun0123/nike",goToUrl:"https://ijieun0123.github.io/nike/",figmaUrl:"https://www.figma.com/design/cjT7IuB3OBkPMi5UpkhfS2/nike?t=Z0ngzI6hRd814lEq-0"},{id:4,imgUrl:"/portfolio-v2/img/portfolio_section_bank.png",title:"불리온뱅크",info:"프로모션 웹페이지",skill:"Html, Css, Jquery, Javascript, Fullpage.js",contribution:"디자인 100%, 퍼블리싱 100%",goToUrl:"https://bullionbank.co.kr/"},{id:5,imgUrl:"/portfolio-v2/img/portfolio_section_bplus.png",title:"비플러스",info:"P2P 대출 서비스 페이지",skill:"Html, Css, Javascript, Bootstrap",contribution:"퍼블리싱 100%",goToUrl:"https://benefitplus.kr/"},{id:6,imgUrl:"/portfolio-v2/img/portfolio_section_team_app.png",title:"팀 앱 ( Frontend + Backend ) ( 데모 )",info:"즉각적인 협업 환경을 목표로 개발된 플랫폼 컨셉 ( 인증/인가, 블로그 기능 구현 )",skill:"Java, Spring boot, JPA, H2 / TypeScript, React, SCSS, Styled-components",contribution:"디자인 50%, 퍼블리싱 100%, 개발 100%",frontGithubUrl:"https://github.com/ijieun0123/team-app-ts",backGithubUrl:"https://github.com/ijieun0123/team-app-java",goToUrl:"https://ijieun0123.github.io/team-app-ts",figmaUrl:"https://www.figma.com/design/70K7HCVIsWTcIM9N1iwOTW/team-app-%EC%B5%9C%EC%A2%85?node-id=1517-2&p=f&t=Z0ngzI6hRd814lEq-0"}],Z1=(n,u)=>{const r=[];for(let i=0;i<n.length;i+=u)r.push(n.slice(i,i+u));return r},K1=ct(Wo)``,J1=({...n})=>{const u=Z1(Q1,2);return O.jsx(K1,{className:"portfolio_slider",modules:[Ph],spaceBetween:200,slidesPerView:1,loop:!1,pagination:{clickable:!0},centeredSlides:!0,breakpoints:{1440:{slidesPerView:6,spaceBetween:20,allowTouchMove:!1,enabled:!1}},...n,children:u.map((r,i)=>O.jsx(Fo,{children:O.jsx("div",{className:"vertical_card_wrapper",children:r.map(c=>O.jsx(X1,{imgUrl:c.imgUrl,title:c.title,info:c.info,skill:c.skill,contribution:c.contribution,frontGithubUrl:c.frontGithubUrl,backGithubUrl:c.backGithubUrl,goToUrl:c.goToUrl,figmaUrl:c.figmaUrl},c.id))})},i))})},k1=ct.div`
     width: 296px;
     height: 296px;
