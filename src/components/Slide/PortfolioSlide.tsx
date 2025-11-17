@@ -12,22 +12,12 @@ interface PortfolioSlideProps {
     figmaUrl?: string;
 }
 
-const StyledSlide = styled.div``;
-
-const PortfolioPhotoWrapper = styled.div`
+const StyledSlide = styled.div`
     width: 100%;
-    aspect-ratio: 294 / 200;
     max-width: 670px;
-    box-shadow: 0px 4px 12px 0px rgba(43, 29, 30, 0.2);
-    overflow: hidden;
-
-    &:hover {
-        box-shadow: 0px 8px 20px 0px rgba(43, 29, 30, 0.3);
-    }
 
     @media (min-width: 768px) {
         width: 670px;
-        height: 400px;
     }
 
     @media (min-width: 1024px) {
@@ -40,6 +30,30 @@ const PortfolioPhotoWrapper = styled.div`
     }
 `;
 
+const PortfolioPhotoWrapper = styled.div`
+    width: 100%;
+    aspect-ratio: 294 / 200;
+    box-shadow: 0px 4px 12px 0px rgba(43, 29, 30, 0.2);
+    overflow: hidden;
+
+    &:hover {
+        box-shadow: 0px 8px 20px 0px rgba(43, 29, 30, 0.3);
+    }
+
+    @media (min-width: 768px) {
+        aspect-ratio: 670 / 400;
+        height: 400px;
+    }
+
+    @media (min-width: 1024px) {
+        aspect-ratio: 928 / 400;
+    }
+
+    @media (min-width: 1440px) {
+        aspect-ratio: 688 / 400;
+    }
+`;
+
 const PortfolioPhoto = styled.div<{ imgUrl: string }>`
     width: 100%;
     height: 100%;
@@ -48,7 +62,7 @@ const PortfolioPhoto = styled.div<{ imgUrl: string }>`
     transition: 0.3s ease-in-out;
 
     ${PortfolioPhotoWrapper}:hover & {
-        transform: rotate(5deg) scale(1.2);
+        transform: rotate(2deg) scale(1.1);
     }
 `;
 
