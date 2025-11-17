@@ -9,29 +9,52 @@ const Home = () => {
                 <div className="container">
                     <div className="text_box">
                         <h2 className="sr_only">intro</h2>
-                        <p className="paragraph">언제나 성장하는 퍼블리셔</p>
-                        <h3>
+                        <p className="paragraph" data-aos="fade-up">
+                            언제나 성장하는 퍼블리셔
+                        </p>
+                        <h3 data-aos="fade-up" data-aos-delay="300">
                             HELLO
                             <br /> I’M JIEUN
                             <br /> WEB PUBLISHER
                         </h3>
                     </div>
                     <div className="bg_box">
-                        <div className="bg_photo"></div>
-                        <div className="bg_yellow_box"></div>
+                        <div
+                            className="bg_photo"
+                            data-aos="fade-left"
+                            data-aos-delay="600"
+                        ></div>
+                        <div
+                            className="bg_yellow_box"
+                            data-aos="slide-left"
+                            data-aos-delay="900"
+                        ></div>
                     </div>
                 </div>
             </section>
             <section id="about" className="about_section">
                 <div className="container">
                     <div className="circle_text_photo">
-                        <div className="bg_circle_text">
-                            <div className="bg_photo"></div>
+                        <div
+                            className="bg_circle_text"
+                            data-aos="fade-right"
+                            data-aos-delay="300"
+                        >
+                            <div
+                                className="bg_photo"
+                                data-aos="fade-right"
+                            ></div>
                         </div>
                     </div>
                     <div className="text_box">
-                        <h2 className="title">About me</h2>
-                        <ul>
+                        <h2
+                            className="title"
+                            data-aos="fade-up"
+                            data-aos-delay="600"
+                        >
+                            About me
+                        </h2>
+                        <ul data-aos="fade-up" data-aos-delay="900">
                             <li>
                                 <b className="paragraph">이름</b>
                                 <p className="paragraph">이지은</p>
@@ -76,13 +99,18 @@ const Home = () => {
                 </div>
             </section>
             <section id="moments" className="moments_section">
-                <h2 className="title">
+                <h2
+                    className="title"
+                    data-aos="fade"
+                    data-aos-duration="2000"
+                    data-aos-delay="1200"
+                >
                     Defining <br />
                     Moments
                 </h2>
                 <div className="defining_photo_box">
-                    <div className="bg_photo_1"></div>
-                    <b>
+                    <div className="bg_photo_1" data-aos="slide-right"></div>
+                    <b data-aos="fade-right" data-aos-delay="300">
                         CURIOUS
                         <br />
                         CREATIVE
@@ -92,16 +120,38 @@ const Home = () => {
                         PASSIONATE
                     </b>
                 </div>
-                <div className="bg_photo_2"></div>
-                <div className="bg_photo_3"></div>
+                <div
+                    className="bg_photo_2"
+                    data-aos="fade-up"
+                    data-aos-delay="600"
+                ></div>
+                <div
+                    className="bg_photo_3"
+                    data-aos="fade-left"
+                    data-aos-delay="900"
+                ></div>
             </section>
             <section id="philosophy" className="philosophy_section">
                 <div className="container">
-                    <div className="bg_orange_box"></div>
-                    <h3 className="about_me">ABOUT ME</h3>
+                    <div className="bg_orange_box" data-aos="slide-right"></div>
+                    <h3
+                        className="about_me"
+                        data-aos="fade-right"
+                        data-aos-delay="300"
+                    >
+                        ABOUT ME
+                    </h3>
                     <div className="img_text_box">
-                        <div className="bg_photo"></div>
-                        <div className="text_box">
+                        <div
+                            className="bg_photo"
+                            data-aos="fade-right"
+                            data-aos-delay="600"
+                        ></div>
+                        <div
+                            className="text_box"
+                            data-aos="fade-right"
+                            data-aos-delay="900"
+                        >
                             <h2 className="title">
                                 My Publishing <br />
                                 Philosophy
@@ -135,9 +185,15 @@ const Home = () => {
             </section>
             <section id="history" className="history_section">
                 <div className="container">
-                    <h2 className="title">History</h2>
+                    <h2 className="title" data-aos="fade-up">
+                        History
+                    </h2>
                     <div className="history_boxes">
-                        <div className="history_box history_box_1">
+                        <div
+                            className="history_box history_box_1"
+                            data-aos="fade-down"
+                            data-aos-delay="300"
+                        >
                             <strong className="history_title">
                                 그린 컴퓨터 아카데미 수료
                             </strong>
@@ -148,7 +204,11 @@ const Home = () => {
                                 웹접근성에 대해 공부하였습니다.
                             </p>
                         </div>
-                        <div className="history_box history_box_2">
+                        <div
+                            className="history_box history_box_2"
+                            data-aos="fade-down"
+                            data-aos-delay="600"
+                        >
                             <strong className="history_title">
                                 라이언랩 근무
                             </strong>
@@ -160,7 +220,11 @@ const Home = () => {
                                 css jquery, JS, 그누보드를 사용하였습니다.
                             </p>
                         </div>
-                        <div className="history_box history_box_3">
+                        <div
+                            className="history_box history_box_3"
+                            data-aos="fade-down"
+                            data-aos-delay="900"
+                        >
                             <strong className="history_title">
                                 비플러스 근무
                             </strong>
@@ -171,7 +235,11 @@ const Home = () => {
                                 도커, 깃허브, JS 를 사용하였습니다.
                             </p>
                         </div>
-                        <div className="history_box history_box_4">
+                        <div
+                            className="history_box history_box_4"
+                            data-aos="fade-down"
+                            data-aos-delay="600"
+                        >
                             <strong className="history_title">
                                 스파르타코딩클럽
                             </strong>
@@ -184,27 +252,50 @@ const Home = () => {
                             </p>
                         </div>
                     </div>
-                    <span className="stick"></span>
+                    <span
+                        className="stick"
+                        data-aos="fade-down"
+                        data-aos-duration="2000"
+                    ></span>
                 </div>
             </section>
             <section id="skill" className="skill_section">
                 <div className="container">
-                    <h2 className="title">Skill</h2>
-                    <SkillSlider />
+                    <h2 className="title" data-aos="fade-up">
+                        Skill
+                    </h2>
+                    <SkillSlider data-aos="fade-up" data-aos-delay="300" />
                 </div>
             </section>
             <section id="portfolio" className="portfolio_section">
                 <div className="container">
-                    <h2 className="title">Portfolio</h2>
-                    <PortfolioSlider />
+                    <h2 className="title" data-aos="fade-up">
+                        Portfolio
+                    </h2>
+                    <PortfolioSlider data-aos="fade-up" data-aos-delay="300" />
                 </div>
             </section>
             <section id="contact" className="contact_section">
                 <div className="container">
-                    <h2 className="title">Contact me</h2>
-                    <div className="bg_photo"></div>
-                    <span className="line"></span>
-                    <a className="email" href="mailto:ijieun0123@gmail.com">
+                    <h2 className="title" data-aos="fade-up">
+                        Contact me
+                    </h2>
+                    <div
+                        className="bg_photo"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                    ></div>
+                    <span
+                        className="line"
+                        data-aos="fade-up"
+                        data-aos-delay="600"
+                    ></span>
+                    <a
+                        className="email"
+                        href="mailto:ijieun0123@gmail.com"
+                        data-aos="fade-up"
+                        data-aos-delay="900"
+                    >
                         ijieun0123@gmail.com
                     </a>
                 </div>

@@ -6,6 +6,11 @@ import SkillSlide from "../Slide/SkillSlide";
 import "./SkillSlider.scss";
 import "./Pagination.scss";
 
+interface SkillSliderProps {
+    "data-aos"?: string;
+    "data-aos-delay"?: string;
+}
+
 const skillData = [
     {
         id: 1,
@@ -78,7 +83,7 @@ const chunkArray = <T,>(arr: T[], size: number): T[][] => {
 
 const StyledSwiper = styled(Swiper)``;
 
-const SkillSlider = () => {
+const SkillSlider = ({ ...rest }: SkillSliderProps) => {
     // 2개씩 묶인 4개의 슬라이드 데이터
     const chunkedSkillData = chunkArray(skillData, 2);
 
@@ -99,6 +104,7 @@ const SkillSlider = () => {
                     enabled: false,
                 },
             }}
+            {...rest}
         >
             {chunkedSkillData.map((cardPair, index) => (
                 <SwiperSlide key={index}>

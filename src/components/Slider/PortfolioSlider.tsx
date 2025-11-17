@@ -5,6 +5,11 @@ import styled from "styled-components";
 import PortfolioSlide from "../Slide/PortfolioSlide";
 import "./PortfolioSlider.scss";
 
+interface PortfolioSliderProps {
+    "data-aos"?: string;
+    "data-aos-delay"?: string;
+}
+
 const portfolioData = [
     {
         id: 1,
@@ -88,7 +93,7 @@ const chunkArray = <T,>(arr: T[], size: number): T[][] => {
 
 const StyledSwiper = styled(Swiper)``;
 
-const PortfolioSlider = () => {
+const PortfolioSlider = ({ ...rest }: PortfolioSliderProps) => {
     // 2개씩 묶인 4개의 슬라이드 데이터
     const chunkedSkillData = chunkArray(portfolioData, 2);
 
@@ -109,6 +114,7 @@ const PortfolioSlider = () => {
                     enabled: false,
                 },
             }}
+            {...rest}
         >
             {chunkedSkillData.map((cardPair, index) => (
                 <SwiperSlide key={index}>
