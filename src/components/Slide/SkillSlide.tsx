@@ -7,7 +7,8 @@ interface SkillSlideProps {
 }
 
 const StyledSlide = styled.div`
-    width: 296px;
+    width: 100%;
+    max-width: 375px;
     height: 296px;
     padding: 30px 30px 50px 30px;
     box-shadow: 0px 4px 12px 0px rgba(43, 29, 30, 0.2);
@@ -44,7 +45,9 @@ const Title = styled.h3`
     }
 `;
 
-const Description = styled.p``;
+const Description = styled.p`
+    letter-spacing: -0.32px;
+`;
 
 const SkillSlide = ({ title, description, imgUrl }: SkillSlideProps) => {
     return (
