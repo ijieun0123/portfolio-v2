@@ -216,7 +216,7 @@ const Home = () => {
                         <div
                             className="history_box history_box_3"
                             data-aos="fade-down"
-                            data-aos-delay="200"
+                            data-aos-delay="500"
                         >
                             <strong className="history_title">
                                 비플러스 근무
@@ -231,7 +231,7 @@ const Home = () => {
                         <div
                             className="history_box history_box_4"
                             data-aos="fade-down"
-                            data-aos-delay="400"
+                            data-aos-delay="600"
                         >
                             <strong className="history_title">
                                 스파르타코딩클럽
