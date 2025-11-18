@@ -185,7 +185,7 @@ const Home = () => {
                         <div
                             className="history_box history_box_1"
                             data-aos="fade-down"
-                            data-aos-delay="300"
+                            data-aos-delay="200"
                         >
                             <strong className="history_title">
                                 그린 컴퓨터 아카데미 수료
@@ -200,7 +200,7 @@ const Home = () => {
                         <div
                             className="history_box history_box_2"
                             data-aos="fade-down"
-                            data-aos-delay="600"
+                            data-aos-delay="400"
                         >
                             <strong className="history_title">
                                 라이언랩 근무
@@ -216,7 +216,7 @@ const Home = () => {
                         <div
                             className="history_box history_box_3"
                             data-aos="fade-down"
-                            data-aos-delay="900"
+                            data-aos-delay="200"
                         >
                             <strong className="history_title">
                                 비플러스 근무
@@ -231,7 +231,7 @@ const Home = () => {
                         <div
                             className="history_box history_box_4"
                             data-aos="fade-down"
-                            data-aos-delay="900"
+                            data-aos-delay="400"
                         >
                             <strong className="history_title">
                                 스파르타코딩클럽
