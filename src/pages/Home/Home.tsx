@@ -34,27 +34,20 @@ const Home = () => {
             </section>
             <section id="about" className="about_section">
                 <div className="container">
-                    <div className="circle_text_photo">
-                        <div
-                            className="bg_circle_text"
-                            data-aos="fade-right"
-                            data-aos-delay="300"
-                        >
-                            <div
-                                className="bg_photo"
-                                data-aos="fade-right"
-                            ></div>
+                    <div className="circle_text_photo" data-aos="fade-up">
+                        <div className="bg_circle_text">
+                            <div className="bg_photo"></div>
                         </div>
                     </div>
                     <div className="text_box">
                         <h2
                             className="title"
                             data-aos="fade-up"
-                            data-aos-delay="600"
+                            data-aos-delay="300"
                         >
                             About me
                         </h2>
-                        <ul data-aos="fade-up" data-aos-delay="900">
+                        <ul data-aos="fade-up" data-aos-delay="600">
                             <li>
                                 <b className="paragraph">이름</b>
                                 <p className="paragraph">이지은</p>
