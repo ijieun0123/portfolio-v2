@@ -54,7 +54,8 @@ const PortfolioPhotoWrapper = styled.div`
     }
 `;
 
-const PortfolioPhoto = styled.div<{ imgUrl: string }>`
+const PortfolioPhoto = styled.a<{ imgUrl: string }>`
+    display: inline-block;
     width: 100%;
     height: 100%;
     background: url(${(props: { imgUrl: string }) => props.imgUrl}) no-repeat
@@ -171,7 +172,12 @@ const PortfolioSlide = ({
     return (
         <StyledSlide className="portfolio_slide">
             <PortfolioPhotoWrapper>
-                <PortfolioPhoto imgUrl={imgUrl}></PortfolioPhoto>
+                <PortfolioPhoto
+                    href={goToUrl}
+                    target="_blank"
+                    title="바로가기"
+                    imgUrl={imgUrl}
+                ></PortfolioPhoto>
             </PortfolioPhotoWrapper>
             <Title>{title}</Title>
             <InfoSkillContributionWrap>
