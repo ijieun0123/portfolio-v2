@@ -12,7 +12,7 @@ const Home = () => {
                         <p className="paragraph" data-aos="fade-up">
                             언제나 성장하는 퍼블리셔
                         </p>
-                        <h3 data-aos="fade-up" data-aos-delay="300">
+                        <h3 data-aos="fade-up" data-aos-delay="200">
                             HELLO
                             <br /> I’M JIEUN
                             <br /> WEB PUBLISHER
@@ -22,12 +22,12 @@ const Home = () => {
                         <div
                             className="bg_photo"
                             data-aos="fade-left"
-                            data-aos-delay="600"
+                            data-aos-delay="400"
                         ></div>
                         <div
                             className="bg_yellow_box"
                             data-aos="slide-left"
-                            data-aos-delay="900"
+                            data-aos-delay="600"
                         ></div>
                     </div>
                 </div>
@@ -43,11 +43,11 @@ const Home = () => {
                         <h2
                             className="title"
                             data-aos="fade-up"
-                            data-aos-delay="300"
+                            data-aos-delay="200"
                         >
                             About me
                         </h2>
-                        <ul data-aos="fade-up" data-aos-delay="600">
+                        <ul data-aos="fade-up" data-aos-delay="400">
                             <li>
                                 <b className="paragraph">이름</b>
                                 <p className="paragraph">이지은</p>
@@ -95,15 +95,15 @@ const Home = () => {
                 <h2
                     className="title"
                     data-aos="fade"
-                    data-aos-duration="2000"
-                    data-aos-delay="1200"
+                    data-aos-duration="1500"
+                    data-aos-delay="800"
                 >
                     Defining <br />
                     Moments
                 </h2>
                 <div className="defining_photo_box">
                     <div className="bg_photo_1" data-aos="slide-right"></div>
-                    <b data-aos="fade-right" data-aos-delay="300">
+                    <b data-aos="fade-right" data-aos-delay="200">
                         CURIOUS
                         <br />
                         CREATIVE
@@ -116,12 +116,12 @@ const Home = () => {
                 <div
                     className="bg_photo_2"
                     data-aos="fade-up"
-                    data-aos-delay="600"
+                    data-aos-delay="400"
                 ></div>
                 <div
                     className="bg_photo_3"
                     data-aos="fade-left"
-                    data-aos-delay="900"
+                    data-aos-delay="600"
                 ></div>
             </section>
             <section id="philosophy" className="philosophy_section">
@@ -130,7 +130,7 @@ const Home = () => {
                     <h3
                         className="about_me"
                         data-aos="fade-right"
-                        data-aos-delay="300"
+                        data-aos-delay="200"
                     >
                         ABOUT ME
                     </h3>
@@ -138,12 +138,12 @@ const Home = () => {
                         <div
                             className="bg_photo"
                             data-aos="fade-right"
-                            data-aos-delay="600"
+                            data-aos-delay="400"
                         ></div>
                         <div
                             className="text_box"
                             data-aos="fade-right"
-                            data-aos-delay="900"
+                            data-aos-delay="600"
                         >
                             <h2 className="title">
                                 My Publishing <br />
@@ -257,7 +257,7 @@ const Home = () => {
                     <h2 className="title" data-aos="fade-up">
                         Skill
                     </h2>
-                    <SkillSlider data-aos="fade-up" data-aos-delay="300" />
+                    <SkillSlider data-aos="fade-up" data-aos-delay="200" />
                 </div>
             </section>
             <section id="portfolio" className="portfolio_section">
@@ -265,7 +265,7 @@ const Home = () => {
                     <h2 className="title" data-aos="fade-up">
                         Portfolio
                     </h2>
-                    <PortfolioSlider data-aos="fade-up" data-aos-delay="300" />
+                    <PortfolioSlider data-aos="fade-up" data-aos-delay="200" />
                 </div>
             </section>
             <section id="contact" className="contact_section">
@@ -276,18 +276,18 @@ const Home = () => {
                     <div
                         className="bg_photo"
                         data-aos="fade-up"
-                        data-aos-delay="300"
+                        data-aos-delay="200"
                     ></div>
                     <span
                         className="line"
                         data-aos="fade-up"
-                        data-aos-delay="600"
+                        data-aos-delay="400"
                     ></span>
                     <a
                         className="email"
                         href="mailto:ijieun0123@gmail.com"
                         data-aos="fade-up"
-                        data-aos-delay="900"
+                        data-aos-delay="600"
                     >
                         ijieun0123@gmail.com
                     </a>
