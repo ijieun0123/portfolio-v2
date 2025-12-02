@@ -25,7 +25,7 @@ const Home = () => {
                             data-aos-delay="400"
                         ></div>
                         <div
-                            className="bg_yellow_box"
+                            className="bg_black_box"
                             data-aos="slide-left"
                             data-aos-delay="600"
                         ></div>
@@ -34,106 +34,14 @@ const Home = () => {
             </section>
             <section id="about" className="about_section">
                 <div className="container">
-                    <div className="circle_text_photo" data-aos="fade-up">
-                        <div className="bg_circle_text">
-                            <div className="bg_photo"></div>
-                        </div>
-                    </div>
-                    <div className="text_box">
-                        <h2
-                            className="title"
-                            data-aos="fade-up"
-                            data-aos-delay="200"
-                        >
-                            About me
-                        </h2>
-                        <ul data-aos="fade-up" data-aos-delay="400">
-                            <li>
-                                <b className="paragraph">이름</b>
-                                <p className="paragraph">이지은</p>
-                            </li>
-                            <li>
-                                <b className="paragraph">이메일</b>
-                                <a
-                                    href="mailto:ijieun0123@gmail.com"
-                                    className="paragraph"
-                                >
-                                    ijieun0123@gmail.com
-                                </a>
-                            </li>
-                            <li>
-                                <b className="paragraph">전화번호</b>
-                                <a href="tel:01050154750" className="paragraph">
-                                    01050154750
-                                </a>
-                            </li>
-                            <li>
-                                <b className="paragraph">주소</b>
-                                <p className="paragraph">
-                                    선지봉로 20번길 4-1 103호
-                                </p>
-                            </li>
-                            <li>
-                                <b className="paragraph">생년월일</b>
-                                <p className="paragraph">19940123</p>
-                            </li>
-                            <li>
-                                <b className="paragraph">취미</b>
-                                <p className="paragraph">
-                                    혼자 코인노래방에 가기
-                                </p>
-                            </li>
-                            <li>
-                                <b className="paragraph">MBTI</b>
-                                <p className="paragraph">ISTP</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section id="moments" className="moments_section">
-                <h2
-                    className="title"
-                    data-aos="fade"
-                    data-aos-duration="1500"
-                    data-aos-delay="800"
-                >
-                    Defining <br />
-                    Moments
-                </h2>
-                <div className="defining_photo_box">
-                    <div className="bg_photo_1" data-aos="slide-right"></div>
-                    <b data-aos="fade-right" data-aos-delay="200">
-                        CURIOUS
-                        <br />
-                        CREATIVE
-                        <br />
-                        EXPLORING
-                        <br />
-                        PASSIONATE
-                    </b>
-                </div>
-                <div
-                    className="bg_photo_2"
-                    data-aos="fade-up"
-                    data-aos-delay="400"
-                ></div>
-                <div
-                    className="bg_photo_3"
-                    data-aos="fade-left"
-                    data-aos-delay="600"
-                ></div>
-            </section>
-            <section id="philosophy" className="philosophy_section">
-                <div className="container">
-                    <div className="bg_orange_box" data-aos="slide-right"></div>
-                    <h3
+                    <div className="bg_black_box" data-aos="slide-right"></div>
+                    <h2
                         className="about_me"
                         data-aos="fade-right"
                         data-aos-delay="200"
                     >
                         ABOUT ME
-                    </h3>
+                    </h2>
                     <div className="img_text_box">
                         <div
                             className="bg_photo"
@@ -145,33 +53,72 @@ const Home = () => {
                             data-aos="fade-right"
                             data-aos-delay="600"
                         >
-                            <h2 className="title">
-                                My Publishing <br />
-                                Philosophy
-                            </h2>
-                            <p className="paragraph paragraph_1">
-                                <strong>
-                                    저는 견고한 시멘틱 마크업을 중요시하고,
-                                </strong>
-                                <br className="hide_on_mobile" /> 웹 접근성과 웹
-                                표준을 신경써서 퍼블리싱을 합니다.
-                                <br className="hide_on_mobile" />
-                                <strong>팀원과 소통에 신경쓰며</strong> 사용자
-                                니즈에 맞는
-                                <br className="hide_on_mobile" />
-                                웹사이트를 구축하겠습니다.
-                            </p>
-                            <p className="paragraph">
-                                <strong>
-                                    퍼블리셔로 일하면서 개발도 함께 공부해
-                                    왔습니다.
-                                </strong>
-                                <br className="hide_on_mobile" />
-                                디자이너와 개발자 사이에서 매끄러운 협업이
-                                가능하며, <br className="hide_on_mobile" />
-                                사용자 중심의 퍼블리싱을 위해 웹 표준과 접근성을
-                                지속적으로 익히고 있습니다.
-                            </p>
+                            <div className="philosophy">
+                                <p className="paragraph paragraph_1">
+                                    <strong>
+                                        저는 견고한 시멘틱 마크업을 중요시하고,
+                                    </strong>
+                                    <br className="hide_on_mobile" /> 웹
+                                    접근성과 웹 표준을 신경써서 퍼블리싱을
+                                    합니다.
+                                    <br className="hide_on_mobile" />
+                                    <strong>팀원과 소통에 신경쓰며</strong>{" "}
+                                    사용자 니즈에 맞는
+                                    <br className="hide_on_mobile" />
+                                    웹사이트를 구축하겠습니다.
+                                </p>
+                                <p className="paragraph">
+                                    <strong>
+                                        퍼블리셔로 일하면서 개발도 함께 공부해
+                                        왔습니다.
+                                    </strong>
+                                    <br className="hide_on_mobile" />
+                                    디자이너와 개발자 사이에서 매끄러운 협업이
+                                    가능하며, <br className="hide_on_mobile" />
+                                    사용자 중심의 퍼블리싱을 위해 웹 표준과
+                                    접근성을
+                                    <br className="show_on_tablet" />
+                                    지속적으로 익히고 있습니다.
+                                </p>
+                            </div>
+
+                            <span className="dark_gray_line"></span>
+                            <ul className="about">
+                                <li>
+                                    <b className="paragraph">이름</b>
+                                    <p className="paragraph">이지은</p>
+                                </li>
+                                <li>
+                                    <b className="paragraph">이메일</b>
+                                    <p className="paragraph">
+                                        ijieun0123@gmail.com
+                                    </p>
+                                </li>
+                                <li>
+                                    <b className="paragraph">전화번호</b>
+                                    <p className="paragraph">01050154750</p>
+                                </li>
+                                <li>
+                                    <b className="paragraph">주소</b>
+                                    <p className="paragraph">
+                                        선지봉로 20번길 4-1 103호
+                                    </p>
+                                </li>
+                                <li>
+                                    <b className="paragraph">생년월일</b>
+                                    <p className="paragraph">19940123</p>
+                                </li>
+                                <li>
+                                    <b className="paragraph">취미</b>
+                                    <p className="paragraph">
+                                        혼자 코인노래방에 가기
+                                    </p>
+                                </li>
+                                <li>
+                                    <b className="paragraph">MBTI</b>
+                                    <p className="paragraph">ISTP</p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

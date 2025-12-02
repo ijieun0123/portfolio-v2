@@ -32,24 +32,19 @@ const StyledSlide = styled.div`
 
 const PortfolioPhotoWrapper = styled.div`
     width: 100%;
-    aspect-ratio: 294 / 200;
-    box-shadow: 0px 4px 12px 0px rgba(43, 29, 30, 0.2);
+    aspect-ratio: 296 / 153;
     overflow: hidden;
 
-    &:hover {
-        box-shadow: 0px 8px 20px 0px rgba(43, 29, 30, 0.3);
-    }
-
     @media (min-width: 768px) {
-        aspect-ratio: 670 / 400;
-        height: 400px;
+        aspect-ratio: 670 / 390;
     }
 
     @media (min-width: 1024px) {
-        aspect-ratio: 928 / 400;
+        aspect-ratio: 928 / 540;
     }
 
     @media (min-width: 1440px) {
+        height: 400px;
         aspect-ratio: 688 / 400;
     }
 `;
@@ -61,10 +56,6 @@ const PortfolioPhoto = styled.a<{ imgUrl: string }>`
     background: url(${(props: { imgUrl: string }) => props.imgUrl}) no-repeat
         top/cover;
     transition: 0.3s ease-in-out;
-
-    ${PortfolioPhotoWrapper}:hover & {
-        transform: rotate(2deg) scale(1.1);
-    }
 `;
 
 const Title = styled.h3`

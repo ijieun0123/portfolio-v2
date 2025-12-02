@@ -12,7 +12,7 @@ const StyledSlide = styled.div`
     height: 296px;
     padding: 30px 30px 50px 30px;
     box-shadow: 0px 4px 12px 0px rgba(43, 29, 30, 0.2);
-    border-top: 5px solid var(--orange-color);
+    border-top: 5px solid var(--dark-gray-color);
     transition: 0.2s;
 
     &:hover {
@@ -34,7 +34,7 @@ const Icon = styled.div<{ imgUrl: string }>`
 `;
 
 const Title = styled.h3`
-    margin: 30px 0;
+    margin: 30px 0 20px;
     font-family: "Lato", sans-serif;
     font-weight: 500;
     font-size: 20px;

@@ -59,6 +59,16 @@ section {
         display: inline;
     }
 }
+.show_on_tablet {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: inline;
+    }
+    @media (min-width: 1440px) {
+        display: none;
+    }
+}
 
 // sr_only
 .sr_only {
