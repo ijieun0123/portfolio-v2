@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useState, useEffect } from "react";
 
 interface PortfolioSlideProps {
     imgUrl: string;
@@ -58,6 +59,10 @@ const PortfolioPhoto = styled.a<{ imgUrl: string }>`
     transition: 0.3s ease-in-out;
 `;
 
+const TextIconBox = styled.div`
+    padding-left: 8%;
+`;
+
 const Title = styled.h3`
     margin: 30px 0 20px;
     font-family: "NanumSquare", sans-serif;
@@ -66,7 +71,7 @@ const Title = styled.h3`
     color: var(--black-color);
 
     @media (min-width: 768px) {
-        padding-left: 10px;
+        margin: 0 0 20px;
     }
 `;
 
@@ -97,20 +102,12 @@ const InfoSkillContributionWrap = styled.div`
         p {
         }
     }
-
-    @media (min-width: 768px) {
-        padding-left: 10px;
-    }
 `;
 
 const IconWrap = styled.div`
     display: flex;
     gap: 20px;
     margin-top: 30px;
-
-    @media (min-width: 768px) {
-        padding-left: 10px;
-    }
 
     a {
         display: inline-block;
@@ -170,51 +167,53 @@ const PortfolioSlide = ({
                     imgUrl={imgUrl}
                 ></PortfolioPhoto>
             </PortfolioPhotoWrapper>
-            <Title>{title}</Title>
-            <InfoSkillContributionWrap>
-                <div>
-                    <b className="paragraph">소개</b>
-                    <p className="paragraph">{info}</p>
-                </div>
-                <div>
-                    <b className="paragraph">기술</b>
-                    <p className="paragraph">{skill}</p>
-                </div>
-                <div>
-                    <b className="paragraph">작업 기여도</b>
-                    <p className="paragraph">{contribution}</p>
-                </div>
-            </InfoSkillContributionWrap>
-            <IconWrap>
-                {frontGithubUrl && (
-                    <FrontGithubIcon
-                        href={frontGithubUrl}
-                        target="_blank"
-                        title="프론트 작업 깃허브"
-                    ></FrontGithubIcon>
-                )}
-                {backGithubUrl && (
-                    <BackGithubIcon
-                        href={backGithubUrl}
-                        target="_blank"
-                        title="백엔드 작업 깃허브"
-                    ></BackGithubIcon>
-                )}
-                {goToUrl && (
-                    <GoToIcon
-                        href={goToUrl}
-                        target="_blank"
-                        title="바로가기"
-                    ></GoToIcon>
-                )}
-                {figmaUrl && (
-                    <FigmaIcon
-                        href={figmaUrl}
-                        target="_blank"
-                        title="피그마"
-                    ></FigmaIcon>
-                )}
-            </IconWrap>
+            <TextIconBox>
+                <Title>{title}</Title>
+                <InfoSkillContributionWrap>
+                    <div>
+                        <b className="paragraph">소개</b>
+                        <p className="paragraph">{info}</p>
+                    </div>
+                    <div>
+                        <b className="paragraph">기술</b>
+                        <p className="paragraph">{skill}</p>
+                    </div>
+                    <div>
+                        <b className="paragraph">작업 기여도</b>
+                        <p className="paragraph">{contribution}</p>
+                    </div>
+                </InfoSkillContributionWrap>
+                <IconWrap>
+                    {frontGithubUrl && (
+                        <FrontGithubIcon
+                            href={frontGithubUrl}
+                            target="_blank"
+                            title="프론트 작업 깃허브"
+                        ></FrontGithubIcon>
+                    )}
+                    {backGithubUrl && (
+                        <BackGithubIcon
+                            href={backGithubUrl}
+                            target="_blank"
+                            title="백엔드 작업 깃허브"
+                        ></BackGithubIcon>
+                    )}
+                    {goToUrl && (
+                        <GoToIcon
+                            href={goToUrl}
+                            target="_blank"
+                            title="바로가기"
+                        ></GoToIcon>
+                    )}
+                    {figmaUrl && (
+                        <FigmaIcon
+                            href={figmaUrl}
+                            target="_blank"
+                            title="피그마"
+                        ></FigmaIcon>
+                    )}
+                </IconWrap>
+            </TextIconBox>
         </StyledSlide>
     );
 };

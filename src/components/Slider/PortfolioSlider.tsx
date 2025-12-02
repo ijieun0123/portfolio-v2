@@ -69,7 +69,7 @@ const portfolioData = [
         id: 6,
         imgUrl: "/portfolio-v2/img/portfolio_section_team_app.png",
         title: "팀 앱 ( Frontend + Backend ) ( 데모 )",
-        info: "즉각적인 협업 환경을 목표로 개발된 플랫폼 컨셉 ( 인증/인가, 블로그 기능 구현 )",
+        info: "즉각적인 협업 환경을 목표로 개발된 플랫폼 컨셉 ( 인증/인가, 블로그 구현 )",
         skill: "Java, Spring boot, JPA, H2 / TypeScript, React, SCSS, Styled-components",
         contribution: "디자인 50%, 퍼블리싱 100%, 개발 100%",
         frontGithubUrl: "https://github.com/ijieun0123/team-app-ts",
