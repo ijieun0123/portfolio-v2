@@ -642,6 +642,16 @@ main {
                             transform: translateY(-50%);
                             left: auto;
                         }
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            left: -120px;
+                            top: 112px;
+                            display: inline-block;
+                            width: 80px;
+                            height: 1px;
+                            background: $dark_gray;
+                        }
                     }
                     .history_box_1 {
                         margin-left: auto;
@@ -654,6 +664,11 @@ main {
                         &::before {
                             right: -138px;
                         }
+                        &::after {
+                            left: auto;
+                            right: -120px;
+                            top: 135px;
+                        }
                     }
                     .history_box_3 {
                         margin-left: auto;
@@ -661,10 +676,18 @@ main {
                         &::before {
                             left: -138px;
                         }
+                        &::after {
+                            top: 123px;
+                        }
                     }
                     .history_box_4 {
                         &::before {
                             right: -138px;
+                        }
+                        &::after {
+                            left: auto;
+                            right: -120px;
+                            top: 125px;
                         }
                     }
                 }
