@@ -60,12 +60,6 @@ const Header = () => {
                             <a href="#about">About</a>
                         </li>
                         <li>
-                            <a href="#moments">Moments</a>
-                        </li>
-                        <li>
-                            <a href="#philosophy">Philosophy</a>
-                        </li>
-                        <li>
                             <a href="#history">History</a>
                         </li>
                         <li>
