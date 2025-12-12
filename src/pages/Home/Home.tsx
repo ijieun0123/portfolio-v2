@@ -62,7 +62,7 @@ const Home = () => {
                                     접근성과 웹 표준을 신경써서 퍼블리싱을
                                     합니다.
                                     <br className="hide_on_mobile" />
-                                    <strong>팀원과 소통에 신경쓰며</strong>{" "}
+                                    <strong>팀원과 소통에 신경쓰며</strong>
                                     사용자 니즈에 맞는
                                     <br className="hide_on_mobile" />
                                     웹사이트를 구축하겠습니다.
@@ -76,8 +76,7 @@ const Home = () => {
                                     디자이너와 개발자 사이에서 매끄러운 협업이
                                     가능하며, <br className="hide_on_mobile" />
                                     사용자 중심의 퍼블리싱을 위해 웹 표준과
-                                    접근성을
-                                    <br className="show_on_tablet" />
+                                    접근성을 <br className="show_on_tablet" />
                                     지속적으로 익히고 있습니다.
                                 </p>
                             </div>
@@ -96,17 +95,11 @@ const Home = () => {
                                 </li>
                                 <li>
                                     <b className="paragraph">전화번호</b>
-                                    <p className="paragraph">01050154750</p>
-                                </li>
-                                <li>
-                                    <b className="paragraph">주소</b>
-                                    <p className="paragraph">
-                                        선지봉로 20번길 4-1 103호
-                                    </p>
+                                    <p className="paragraph">010-5015-4750</p>
                                 </li>
                                 <li>
                                     <b className="paragraph">생년월일</b>
-                                    <p className="paragraph">19940123</p>
+                                    <p className="paragraph">1994.01.23</p>
                                 </li>
                                 <li>
                                     <b className="paragraph">취미</b>
@@ -139,9 +132,9 @@ const Home = () => {
                             </strong>
                             <p className="history_year">2021.03 - 2021.07</p>
                             <p className="paragraph">
-                                포토샵, 일러스트, XD, html, css, Jquery 를
-                                배웠습니다. 시멘틱 태그 사용법과 웹표준,
-                                웹접근성에 대해 공부하였습니다.
+                                - 포토샵, 일러스트, XD, HTML, CSS, Jquery 학습
+                                <br />- 시멘틱 태그 사용법, 웹표준, 웹접근성
+                                학습
                             </p>
                         </div>
                         <div
@@ -154,10 +147,11 @@ const Home = () => {
                             </strong>
                             <p className="history_year">2021.08 - 2023.01</p>
                             <p className="paragraph">
-                                컨설팅 및 소프트웨어 개발 및 공급업,
-                                광고대행법을 행하는 SI 업체입니다. 퍼블리셔로써
-                                근무했고, 주로 유지보수를 담당하였습니다. html,
-                                css jquery, JS, 그누보드를 사용하였습니다.
+                                - 컨설팅 및 소프트웨어 개발 및 광고대행법을
+                                행하는 SI 업체
+                                <br />
+                                - 퍼블리셔로써 근무, 주로 유지보수를 담당
+                                <br />- HTML, CSS Jquery, JS, 그누보드를 사용
                             </p>
                         </div>
                         <div
@@ -170,9 +164,10 @@ const Home = () => {
                             </strong>
                             <p className="history_year">2023.02 - 2023.09</p>
                             <p className="paragraph">
-                                소셜임팩트를 기업가치에 반영한 소셜벤처적용 P2P
-                                대출 서비스 회사입니다. 개발자로써 근무하였고,
-                                도커, 깃허브, JS 를 사용하였습니다.
+                                - 소셜벤처적용 P2P 대출 서비스 회사
+                                <br />
+                                - 개발자로써 근무 주로 퍼블리싱 담당
+                                <br />- 도커, 깃허브, JS 를 사용
                             </p>
                         </div>
                         <div
@@ -185,10 +180,9 @@ const Home = () => {
                             </strong>
                             <p className="history_year">2024.12 - 2025.05</p>
                             <p className="paragraph">
-                                실무 중심 커리큘럼으로 Java와 Spring Boot 기반
-                                백엔드 개발을 집중 학습하였습니다. API 개발, DB
-                                연동, 인증/인가 등 실제 서비스 구축에 필요한
-                                기술을 프로젝트 기반으로 익혔습니다.
+                                - Java와 Spring Boot 기반 백엔드 개발을 집중
+                                학습
+                                <br />- API 개발, DB 연동, 인증/인가 등 학습
                             </p>
                         </div>
                     </div>
