@@ -28,16 +28,16 @@
 
 ### 1920
 
-<img src="public/img/portfolio_1920.png" width="1920">
+<!-- <img src="public/img/portfolio_1920.png" width="1920"> -->
 
 ### 1024
 
-<img src="public/img/portfolio_1024.png" width="1024">
+<!-- <img src="public/img/portfolio_1024.png" width="1024"> -->
 
 ### 768
 
-<img src="public/img/portfolio_768.png" width="768">
+<!-- <img src="public/img/portfolio_768.png" width="768"> -->
 
 ### 375
 
-<img src="public/img/portfolio_375.png" width="375">
+<!-- <img src="public/img/portfolio_375.png" width="375"> -->
